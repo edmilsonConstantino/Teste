@@ -1,0 +1,330 @@
+<!-- Hero Section -->
+<section class="gradient-bg text-white py-5">
+    <div class="container py-4">
+        <div class="row align-items-center">
+            <div class="col-lg-6" data-animate="slide-in-left">
+                <h1 class="display-4 fw-bold mb-4 text-center">Sobre a Horizon Global Consulting</h1>
+                <p class="lead mb-4 opacity-90 text-center">
+                    A Horizon Global Consulting, Lda. é uma empresa moçambicana 
+                    especializada em assessoria e consultoria empresarial, oferecendo 
+                    soluções estratégicas para impulsionar o crescimento e a eficiência 
+                    das organizações.
+                </p>
+                <div class="d-flex gap-3 flex-wrap justify-content-center">
+                    <div class="text-center highlight-item">
+                        <div class="bg-white bg-opacity-20 rounded-circle p-3 mb-2">
+                            <i class="fas fa-flag text-warning fs-4"></i>
+                        </div>
+                        <small class="fw-bold">Empresa Moçambicana</small>
+                    </div>
+                    <div class="text-center highlight-item">
+                        <div class="bg-white bg-opacity-20 rounded-circle p-3 mb-2">
+                            <i class="fas fa-star text-warning fs-4"></i>
+                        </div>
+                        <small class="fw-bold">Excelência</small>
+                    </div>
+                    <div class="text-center highlight-item">
+                        <div class="bg-white bg-opacity-20 rounded-circle p-3 mb-2">
+                            <i class="fas fa-lightbulb text-warning fs-4"></i>
+                        </div>
+                        <small class="fw-bold">Inovação</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center" data-animate="slide-in-right">
+                <div class="position-relative">
+                    <div class="bg-white bg-opacity-10 rounded-3 p-5 hero-card">
+                        <i class="fas fa-globe display-1 text-warning mb-3 hero-icon"></i>
+                        <h5 class="fw-bold">Consolidar-se como Referência</h5>
+                        <p class="mb-0 opacity-75">No mercado moçambicano, contribuindo para o desenvolvimento sustentável dos negócios</p>
+                    </div>
+                    <!-- Floating elements -->
+                    <div class="floating-element floating-1">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="floating-element floating-2">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="floating-element floating-3">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.gradient-bg {
+    background: linear-gradient(135deg, var(--bs-primary), var(--bs-info));
+    position: relative;
+    overflow: hidden;
+}
+
+.gradient-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    pointer-events: none;
+}
+
+/* Highlight items animations */
+.highlight-item {
+    transition: all 0.3s ease;
+    padding: 0.5rem;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.highlight-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: all 0.6s ease;
+}
+
+.highlight-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.1);
+}
+
+.highlight-item:hover::before {
+    left: 100%;
+}
+
+.highlight-item:hover .bg-white {
+    background-color: rgba(255,255,255,0.3) !important;
+}
+
+.highlight-item:hover i {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+/* Hero card animations */
+.hero-card {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.hero-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: all 0.8s ease;
+}
+
+.hero-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    background-color: rgba(255,255,255,0.15) !important;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.hero-card:hover::before {
+    left: 100%;
+}
+
+.hero-icon {
+    transition: all 0.4s ease;
+}
+
+.hero-card:hover .hero-icon {
+    transform: scale(1.1) rotate(5deg);
+    text-shadow: 0 0 20px rgba(255,193,7,0.5);
+}
+
+/* Floating elements */
+.floating-element {
+    position: absolute;
+    color: rgba(255,255,255,0.3);
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.floating-1 {
+    top: 10%;
+    right: 10%;
+    animation: float1 4s ease-in-out infinite;
+}
+
+.floating-2 {
+    bottom: 20%;
+    left: 5%;
+    animation: float2 5s ease-in-out infinite;
+}
+
+.floating-3 {
+    top: 60%;
+    right: 5%;
+    animation: float3 6s ease-in-out infinite;
+}
+
+@keyframes float1 {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(10deg); }
+}
+
+@keyframes float2 {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(-10deg); }
+}
+
+@keyframes float3 {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(5deg); }
+}
+
+.hero-card:hover .floating-element {
+    color: rgba(255,255,255,0.6);
+    transform: scale(1.2);
+}
+
+/* Section spacing */
+section {
+    scroll-margin-top: 100px;
+}
+
+/* Responsive adjustments - MELHORADOS */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 1.8rem !important;
+        line-height: 1.3;
+        text-align: center;
+    }
+    
+    .lead {
+        font-size: 1rem !important;
+        text-align: center;
+        margin-bottom: 2rem !important;
+    }
+    
+    .display-1 {
+        font-size: 2.5rem !important;
+    }
+    
+    .py-4 {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+    
+    .hero-card {
+        margin-top: 2rem;
+        padding: 2rem 1.5rem !important;
+    }
+    
+    /* Centralizar tudo no mobile */
+    .col-lg-6:first-child {
+        text-align: center;
+    }
+    
+    .highlight-item {
+        margin-bottom: 1rem;
+        flex: 1;
+        min-width: 90px;
+    }
+}
+
+@media (max-width: 576px) {
+    .display-4 {
+        font-size: 1.5rem !important;
+        line-height: 1.2;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .lead {
+        font-size: 0.9rem !important;
+        line-height: 1.4;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .display-1 {
+        font-size: 2rem !important;
+    }
+    
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    .py-4 {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+    
+    .hero-card {
+        padding: 1.5rem 1rem !important;
+        margin-top: 1.5rem;
+    }
+    
+    .hero-card h5 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .hero-card p {
+        font-size: 0.85rem;
+    }
+    
+    .gap-3 {
+        gap: 0.8rem !important;
+    }
+    
+    .highlight-item {
+        flex: 1;
+        min-width: 85px;
+        padding: 0.3rem;
+    }
+    
+    .highlight-item .rounded-circle {
+        padding: 0.6rem !important;
+        margin-bottom: 0.3rem !important;
+    }
+    
+    .highlight-item small {
+        font-size: 0.7rem;
+        line-height: 1.1;
+    }
+    
+    .fs-4 {
+        font-size: 0.9rem !important;
+    }
+    
+    /* Layout mais compacto para mobile pequeno */
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .row {
+        margin: 0;
+    }
+    
+    .col-lg-6 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .gradient-bg {
+        background: linear-gradient(135deg, #1a365d, #2c5282);
+    }
+}
+</style>

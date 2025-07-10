@@ -1,0 +1,224 @@
+<section class="gradient-bg text-white py-5">
+    <div class="container">
+        <div class="row align-items-center text-center text-lg-start">
+            <div class="col-lg-8" data-animate="slide-in-left">
+                <h3 class="display-6 fw-bold mb-3">Junte-se aos Nossos Clientes Satisfeitos</h3>
+                <p class="lead mb-4 opacity-90">
+                    Descubra como a nossa expertise e dedicação podem transformar a gestão da sua empresa. 
+                    Entre em contacto connosco hoje para uma consulta gratuita.
+                </p>
+                <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                    <a href="#" class="btn btn-light btn-lg rounded-pill px-4 enhanced-btn" data-page="contact">
+                        <span class="btn-text">
+                            <i class="fas fa-calendar me-2"></i>
+                            Agendar Consulta
+                        </span>
+                    </a>
+                    <a href="#" class="btn btn-outline-light btn-lg rounded-pill px-4 enhanced-btn" data-page="services">
+                        <span class="btn-text">
+                            <i class="fas fa-briefcase me-2"></i>
+                            Ver Serviços
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center mt-4 mt-lg-0" data-animate="slide-in-right">
+                <div class="position-relative">
+                    <div class="bg-white bg-opacity-10 rounded-circle p-5 d-inline-block">
+                        <i class="fas fa-users display-3 text-warning"></i>
+                    </div>
+                    <div class="position-absolute top-0 start-0 bg-light rounded-circle p-2 animate-float">
+                        <i class="fas fa-thumbs-up text-success"></i>
+                    </div>
+                    <div class="position-absolute bottom-0 end-0 bg-success rounded-circle p-2 animate-float" style="animation-delay: 0.5s;">
+                        <i class="fas fa-heart text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.gradient-bg {
+    background: linear-gradient(135deg, var(--bs-primary), var(--bs-info));
+}
+
+@keyframes animate-float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+.animate-float {
+    animation: animate-float 3s ease-in-out infinite;
+}
+
+@keyframes button-pulse {
+    0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4); }
+    70% { box-shadow: 0 0 0 15px rgba(255, 255, 255, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+}
+
+@keyframes button-shine {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+@keyframes icon-bounce {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-3px) scale(1.1); }
+}
+
+.enhanced-btn {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 2px solid transparent;
+    z-index: 1;
+}
+
+.enhanced-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.btn-text {
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+
+.btn-light.enhanced-btn:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 
+        0 15px 35px rgba(0,0,0,0.2),
+        0 5px 15px rgba(255,255,255,0.3);
+    background: linear-gradient(45deg, #ffffff, #f8f9fa);
+    border-color: rgba(255,255,255,0.8);
+    animation: button-pulse 1.5s infinite;
+}
+
+.btn-light.enhanced-btn:hover::before {
+    left: 100%;
+}
+
+.btn-light.enhanced-btn:hover .btn-text {
+    color: #0d6efd;
+    text-shadow: 0 0 10px rgba(13, 110, 253, 0.3);
+}
+
+.btn-light.enhanced-btn:hover i {
+    animation: icon-bounce 0.6s ease infinite;
+    color: #0d6efd;
+    filter: drop-shadow(0 0 5px rgba(13, 110, 253, 0.5));
+}
+
+
+.btn-outline-light.enhanced-btn {
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    background: transparent;
+}
+
+.btn-outline-light.enhanced-btn:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 
+        0 15px 35px rgba(0,0,0,0.2),
+        0 5px 15px rgba(255,255,255,0.2),
+        inset 0 0 30px rgba(255,255,255,0.1);
+    background: linear-gradient(45deg, rgba(255,255,255,0.15), rgba(255,255,255,0.25));
+    border-color: #ffffff;
+    animation: button-pulse 1.5s infinite;
+}
+
+.btn-outline-light.enhanced-btn:hover::before {
+    left: 100%;
+}
+
+.btn-outline-light.enhanced-btn:hover .btn-text {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    filter: brightness(1.2);
+}
+
+.btn-outline-light.enhanced-btn:hover i {
+    animation: icon-bounce 0.6s ease infinite;
+    color: #ffffff;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+}
+
+
+.enhanced-btn:active {
+    transform: translateY(-4px) scale(1.02);
+    transition: all 0.1s ease;
+}
+
+.enhanced-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+    .display-6 {
+        font-size: 1.75rem;
+    }
+    
+    .animate-float {
+        display: none; 
+    }
+    
+    .position-relative .position-absolute {
+        position: static !important;
+        display: none;
+    }
+    
+    .enhanced-btn:hover {
+        transform: translateY(-4px) scale(1.02) !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .py-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    .btn-lg {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+    
+    .enhanced-btn:hover {
+        transform: translateY(-2px) scale(1.01) !important;
+        animation: none !important;
+    }
+    
+    .enhanced-btn:hover i {
+        animation: none !important;
+    }
+}
+
+@media (hover: none) {
+    .enhanced-btn:hover {
+        transform: none;
+        animation: none;
+        box-shadow: none;
+    }
+    
+    .enhanced-btn:hover i {
+        animation: none;
+    }
+}
+</style>
+
+<!-- Bootstrap CSS e Font Awesome -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">

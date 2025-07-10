@@ -1,0 +1,221 @@
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6" data-animate="slide-in-left">
+                <h2 class="display-5 fw-bold text-gradient mb-4">Nossa História</h2>
+                <p class="text-muted mb-4">
+                    Desde a sua fundação, a Horizon Global Consulting tem se destacado na prestação de serviços 
+                    em contabilidade, fiscalidade, auditoria, consultoria de gestão empresarial, controlo de gestão, 
+                    gestão de recursos humanos, serviços administrativos e faturação.
+                </p>
+                <p class="text-muted mb-4">
+                    Nosso compromisso é proporcionar suporte técnico e estratégico que auxilie as empresas na 
+                    tomada de decisões assertivas e no cumprimento das exigências regulatórias.
+                </p>
+                <p class="text-muted mb-4">
+                    Com uma abordagem inovadora e orientada para resultados, buscamos consolidar-nos como 
+                    referência no mercado moçambicano, contribuindo para o desenvolvimento sustentável dos 
+                    negócios e fortalecendo o ambiente corporativo no país.
+                </p>
+            </div>
+                        <div class="col-lg-6" data-animate="slide-in-right">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker bg-primary"></div>
+                        <div class="timeline-content">
+                            <h6 class="fw-bold text-primary">Fundação</h6>
+                            <p class="mb-0 text-muted">Estabelecimento da Horizon Global Consulting, Lda. em Maputo</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker bg-success"></div>
+                        <div class="timeline-content">
+                            <h6 class="fw-bold text-success">Excelência</h6>
+                            <p class="mb-0 text-muted">Compromisso com a qualidade e entrega de soluções eficientes e inovadoras</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker bg-info"></div>
+                        <div class="timeline-content">
+                            <h6 class="fw-bold text-info">Inovação</h6>
+                            <p class="mb-0 text-muted">Busca contínua por tecnologias e estratégias que impulsionem a modernização</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker bg-warning"></div>
+                        <div class="timeline-content">
+                            <h6 class="fw-bold text-warning">Visão</h6>
+                            <p class="mb-0 text-muted">Ser reconhecida como referência em consultoria e gestão empresarial em Moçambique</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.text-gradient {
+    background: linear-gradient(45deg, var(--bs-primary), var(--bs-info));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+.timeline {
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--bs-primary), var(--bs-info));
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -23px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.timeline-content {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-left: 3px solid var(--bs-primary);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent);
+    transition: all 0.6s ease;
+}
+
+.timeline-item:hover .timeline-content::before {
+    left: 100%;
+}
+
+.timeline-item:hover .timeline-content {
+    transform: translateX(10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.timeline-item:hover .timeline-marker {
+    transform: scale(1.2);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+
+.timeline-item:hover .bg-primary {
+    background-color: var(--bs-primary) !important;
+    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.4);
+}
+
+.timeline-item:hover .bg-success {
+    background-color: var(--bs-success) !important;
+    box-shadow: 0 4px 15px rgba(25, 135, 84, 0.4);
+}
+
+.timeline-item:hover .bg-info {
+    background-color: var(--bs-info) !important;
+    box-shadow: 0 4px 15px rgba(13, 202, 240, 0.4);
+}
+
+.timeline-item:hover .bg-warning {
+    background-color: var(--bs-warning) !important;
+    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
+}
+
+
+section {
+    scroll-margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+    .display-5 {
+        font-size: 2rem;
+    }
+    
+    .timeline {
+        padding-left: 20px;
+    }
+    
+    .timeline::before {
+        left: 10px;
+    }
+    
+    .timeline-marker {
+        left: 3px;
+        width: 14px;
+        height: 14px;
+    }
+    
+    .timeline-content {
+        padding: 0.75rem;
+    }
+    
+    .timeline-item {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .py-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    .mb-4 {
+        margin-bottom: 1rem !important;
+    }
+    
+    .timeline {
+        padding-left: 15px;
+    }
+    
+    .timeline::before {
+        left: 7px;
+        width: 1px;
+    }
+    
+    .timeline-marker {
+        left: 0px;
+        width: 12px;
+        height: 12px;
+    }
+    
+    .timeline-content {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .timeline-item {
+        margin-bottom: 1rem;
+    }
+}
+</style>

@@ -1,0 +1,175 @@
+<!-- Hero Section -->
+<section class="gradient-bg text-white py-5">
+    <div class="container py-5">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8 hero-content">
+                <h1 class="display-4 fw-bold mb-4 hero-title">
+                    Entre em <span class="text-warning">Contacto</span>
+                </h1>
+                <p class="lead mb-4 opacity-90 hero-description">
+                    Estamos aqui para ajudar a impulsionar o sucesso do seu negócio. 
+                    Entre em contacto connosco para uma consulta gratuita e personalizada.
+                </p>
+                <div class="d-flex justify-content-center hero-stats">
+                    <div class="row g-4 text-center">
+                        <div class="col-md-4 col-6">
+                            <div class="bg-white bg-opacity-10 rounded-3 p-3 hero-card">
+                                <i class="fas fa-clock fs-2 mb-2"></i>
+                                <h6 class="fw-bold">Resposta Rápida</h6>
+                                <small>Até 24h</small>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6">
+                            <div class="bg-white bg-opacity-10 rounded-3 p-3 hero-card">
+                                <i class="fas fa-users fs-2 mb-2"></i>
+                                <h6 class="fw-bold">Consulta Gratuita</h6>
+                                <small>Primeira reunião</small>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="bg-white bg-opacity-10 rounded-3 p-3 hero-card">
+                                <i class="fas fa-phone fs-2 mb-2"></i>
+                                <h6 class="fw-bold">Suporte Especializado</h6>
+                                <small>Sempre disponível</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Hero Section Styles */
+.gradient-bg {
+    background: linear-gradient(135deg, var(--bs-primary), var(--bs-info));
+    margin-top: 0;
+    padding-top: 120px; /* Espaço para a navbar */
+}
+
+.hero-card {
+    transition: all 0.3s ease;
+}
+
+.hero-card:hover {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    transform: translateY(-3px);
+}
+
+.hero-card i {
+    transition: all 0.3s ease;
+}
+
+.hero-card:hover i {
+    transform: scale(1.1);
+}
+
+/* Mobile Responsividade */
+@media (max-width: 768px) {
+    .gradient-bg {
+        padding-top: 90px; /* Menos espaço no mobile */
+    }
+    
+    /* Hero Section */
+    .hero-content {
+        text-align: center !important;
+        padding: 0 1rem;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem !important;
+    }
+    
+    .hero-description {
+        font-size: 1rem !important;
+        padding: 0 0.5rem;
+    }
+    
+    .hero-stats .col-md-4 {
+        margin-bottom: 1rem;
+    }
+    
+    .hero-card {
+        padding: 1rem !important;
+    }
+    
+    .fs-2 {
+        font-size: 1.3rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .gradient-bg {
+        padding-top: 80px; /* Ainda menos no mobile pequeno */
+    }
+    
+    .container.py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    .hero-title {
+        font-size: 1.9rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .hero-description {
+        font-size: 0.95rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .hero-card {
+        padding: 0.75rem !important;
+    }
+    
+    .hero-card h6 {
+        font-size: 0.9rem !important;
+    }
+    
+    .hero-card small {
+        font-size: 0.8rem !important;
+    }
+    
+    .fs-2 {
+        font-size: 1.2rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .gradient-bg {
+        padding-top: 75px;
+    }
+    
+    .hero-title {
+        font-size: 1.7rem !important;
+    }
+    
+    .hero-description {
+        font-size: 0.9rem !important;
+    }
+    
+    .hero-card h6 {
+        font-size: 0.85rem !important;
+    }
+    
+    .hero-card small {
+        font-size: 0.75rem !important;
+    }
+    
+    .fs-2 {
+        font-size: 1.1rem !important;
+    }
+}
+
+/* High DPI mobile displays */
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 768px) {
+    .hero-title {
+        font-weight: 600;
+    }
+    
+    .hero-description {
+        font-weight: 400;
+    }
+}
+</style>

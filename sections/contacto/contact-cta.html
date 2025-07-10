@@ -1,0 +1,417 @@
+<!-- CTA Section -->
+<section class="gradient-bg text-white py-5">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8 cta-content">
+                <h3 class="display-6 fw-bold mb-3 cta-title">Pronto para Impulsionar o Seu Negócio?</h3>
+                <p class="lead mb-4 opacity-90 cta-description">
+                    Agende uma consulta gratuita e descubra como a Horizon Global Consulting 
+                    pode ajudar a sua empresa a crescer e prosperar.
+                </p>
+                <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center mb-4 cta-buttons">
+                    <a href="tel:+258860195510" class="btn btn-light btn-lg rounded-pill px-4 cta-btn primary-cta">
+                        <i class="fas fa-phone me-2"></i>
+                        Ligar Agora
+                    </a>
+                    <a href="mailto:comercial@horizonconsulting.co.mz" class="btn btn-outline-light btn-lg rounded-pill px-4 cta-btn secondary-cta">
+                        <i class="fas fa-envelope me-2"></i>
+                        Enviar Email
+                    </a>
+                </div>
+                
+                <div class="mt-4 pt-4 border-top border-white border-opacity-25 cta-benefits">
+                    <div class="row g-3 text-center">
+                        <div class="col-md-4">
+                            <div class="d-flex align-items-center justify-content-center benefit-item">
+                                <div class="benefit-icon me-2">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <small class="benefit-text">Consulta Gratuita</small>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-flex align-items-center justify-content-center benefit-item">
+                                <div class="benefit-icon me-2">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <small class="benefit-text">Resposta em 24h</small>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-flex align-items-center justify-content-center benefit-item">
+                                <div class="benefit-icon me-2">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <small class="benefit-text">Total Confidencialidade</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Trust Indicators -->
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* CTA Section Styles */
+.gradient-bg {
+    background: linear-gradient(135deg, var(--bs-primary), var(--bs-info));
+    position: relative;
+    overflow: hidden;
+}
+
+.gradient-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+    pointer-events: none;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+}
+
+.cta-title {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.cta-description {
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.cta-buttons {
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.cta-btn {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: all 0.5s ease;
+}
+
+.primary-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border-color: rgba(255,255,255,0.3);
+}
+
+.secondary-cta {
+    border-color: rgba(255,255,255,0.7);
+}
+
+.secondary-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.1);
+    border-color: white;
+}
+
+.cta-btn:hover::before {
+    left: 100%;
+}
+
+.benefit-item {
+    transition: all 0.3s ease;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.benefit-item:hover {
+    background-color: rgba(255,255,255,0.1);
+    transform: translateY(-2px);
+}
+
+.benefit-icon {
+    transition: all 0.3s ease;
+}
+
+.benefit-item:hover .benefit-icon {
+    transform: scale(1.2);
+}
+
+.trust-badge {
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.trust-badge:hover {
+    background-color: rgba(255,255,255,0.3) !important;
+    transform: translateY(-2px);
+}
+
+.cta-benefits {
+    animation: fadeInUp 0.8s ease-out 0.6s both;
+}
+
+.trust-indicators {
+    animation: fadeInUp 0.8s ease-out 0.8s both;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Responsividade */
+@media (max-width: 768px) {
+    /* CTA Section */
+    .cta-content {
+        padding: 0 1rem;
+    }
+    
+    .display-6 {
+        font-size: 1.8rem !important;
+    }
+    
+    .cta-description {
+        font-size: 1rem !important;
+        padding: 0 0.5rem;
+    }
+    
+    .cta-btn {
+        width: 100%;
+        max-width: 200px;
+        font-size: 0.9rem;
+    }
+    
+    .benefit-text {
+        font-size: 0.85rem !important;
+    }
+    
+    .trust-badge {
+        font-size: 0.8rem !important;
+        padding: 0.4rem 0.8rem !important;
+    }
+    
+    .trust-indicators .row {
+        justify-content: center !important;
+    }
+    
+    .trust-indicators .col-auto {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .py-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .display-6 {
+        font-size: 1.6rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .cta-description {
+        font-size: 0.95rem !important;
+        margin-bottom: 1.5rem !important;
+        padding: 0;
+    }
+    
+    .cta-btn {
+        font-size: 0.85rem;
+        padding: 0.7rem 1.2rem;
+        max-width: 180px;
+    }
+    
+    .cta-benefits {
+        margin-top: 1.5rem !important;
+        padding-top: 1.5rem !important;
+    }
+    
+    .benefit-item {
+        flex-direction: column !important;
+        padding: 0.75rem 0.5rem;
+    }
+    
+    .benefit-icon {
+        margin-bottom: 0.25rem !important;
+        margin-right: 0 !important;
+    }
+    
+    .benefit-text {
+        font-size: 0.8rem !important;
+    }
+    
+    .trust-badge {
+        font-size: 0.75rem !important;
+        padding: 0.35rem 0.7rem !important;
+        margin-bottom: 0.5rem;
+    }
+    
+    .row.g-3 {
+        --bs-gutter-x: 0.5rem;
+        --bs-gutter-y: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .display-6 {
+        font-size: 1.5rem !important;
+    }
+    
+    .cta-description {
+        font-size: 0.9rem !important;
+    }
+    
+    .cta-btn {
+        font-size: 0.8rem;
+        padding: 0.65rem 1rem;
+        max-width: 160px;
+    }
+    
+    .benefit-text {
+        font-size: 0.75rem !important;
+    }
+    
+    .trust-badge {
+        font-size: 0.7rem !important;
+        padding: 0.3rem 0.6rem !important;
+    }
+}
+
+/* High DPI mobile displays */
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 768px) {
+    .display-6 {
+        font-weight: 600;
+    }
+    
+    .cta-description {
+        font-weight: 400;
+    }
+}
+
+/* Landscape mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    .display-6 {
+        font-size: 1.7rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .cta-description {
+        font-size: 0.9rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .cta-benefits {
+        margin-top: 1rem !important;
+        padding-top: 1rem !important;
+    }
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .cta-title,
+    .cta-description,
+    .cta-buttons,
+    .cta-benefits,
+    .trust-indicators {
+        animation: none;
+    }
+    
+    .cta-btn:hover,
+    .benefit-item:hover,
+    .trust-badge:hover {
+        transform: none;
+    }
+}
+</style>
+
+<script>
+// CTA interaction tracking and effects
+document.addEventListener('DOMContentLoaded', function() {
+    // Track CTA button clicks
+    const ctaBtns = document.querySelectorAll('.cta-btn');
+    ctaBtns.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            // Add click effect
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 150);
+            
+            // Log interaction for analytics
+            const action = this.classList.contains('primary-cta') ? 'Phone Call' : 'Email';
+            console.log(`CTA clicked: ${action}`);
+            
+            // Optional: Send to analytics
+            // gtag('event', 'contact_cta_click', { 'method': action });
+        });
+    });
+    
+    // Animate trust badges on scroll into view
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const badges = entry.target.querySelectorAll('.trust-badge');
+                badges.forEach((badge, index) => {
+                    setTimeout(() => {
+                        badge.style.animation = 'fadeInUp 0.5s ease-out forwards';
+                    }, index * 100);
+                });
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+    
+    const trustSection = document.querySelector('.trust-indicators');
+    if (trustSection) {
+        observer.observe(trustSection);
+    }
+    
+    // Add dynamic hover effects
+    const benefitItems = document.querySelectorAll('.benefit-item');
+    benefitItems.forEach(item => {
+        item.addEventListener('mouseenter', function() {
+            this.style.backgroundColor = 'rgba(255,255,255,0.1)';
+        });
+        
+        item.addEventListener('mouseleave', function() {
+            this.style.backgroundColor = 'transparent';
+        });
+    });
+});
+</script>

@@ -1,0 +1,147 @@
+<!-- Certificações e Parcerias -->
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-gradient mb-3" data-animate="fade-in">Certificações e Reconhecimentos</h2>
+            <p class="lead text-muted" data-animate="fade-in" data-delay="100">
+                Qualidade e conformidade reconhecidas pelos principais órgãos reguladores
+            </p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6" data-animate="fade-in" data-delay="0">
+                <div class="text-center p-4 bg-light rounded-3 h-100 certification-card">
+                    <i class="fas fa-shield-alt text-primary fs-1 mb-3"></i>
+                    <h6 class="fw-bold mb-2">Certificação Fiscal</h6>
+                    <p class="text-muted small mb-0">
+                        Software certificado pelas autoridades tributárias moçambicanas
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6" data-animate="fade-in" data-delay="100">
+                <div class="text-center p-4 bg-light rounded-3 h-100 certification-card">
+                    <i class="fas fa-globe text-success fs-1 mb-3"></i>
+                    <h6 class="fw-bold mb-2">Normas Internacionais</h6>
+                    <p class="text-muted small mb-0">
+                        Conformidade com NIRF e padrões internacionais de contabilidade
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6" data-animate="fade-in" data-delay="200">
+                <div class="text-center p-4 bg-light rounded-3 h-100 certification-card">
+                    <i class="fas fa-award text-warning fs-1 mb-3"></i>
+                    <h6 class="fw-bold mb-2">Qualidade ISO</h6>
+                    <p class="text-muted small mb-0">
+                        Processos alinhados com padrões internacionais de qualidade
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6" data-animate="fade-in" data-delay="300">
+                <div class="text-center p-4 bg-light rounded-3 h-100 certification-card">
+                    <i class="fas fa-handshake text-info fs-1 mb-3"></i>
+                    <h6 class="fw-bold mb-2">Parcerias Estratégicas</h6>
+                    <p class="text-muted small mb-0">
+                        Associações com principais instituições financeiras e empresariais
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.text-gradient {
+    background: linear-gradient(45deg, var(--bs-primary), var(--bs-info));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.certification-card {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.certification-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent);
+    transition: all 0.6s ease;
+}
+
+.certification-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    background-color: white !important;
+}
+
+.certification-card:hover::before {
+    left: 100%;
+}
+
+.certification-card:hover i {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Icon specific colors on hover */
+.certification-card:hover .fa-shield-alt {
+    color: var(--bs-primary) !important;
+    text-shadow: 0 0 20px rgba(13, 110, 253, 0.3);
+}
+
+.certification-card:hover .fa-globe {
+    color: var(--bs-success) !important;
+    text-shadow: 0 0 20px rgba(25, 135, 84, 0.3);
+}
+
+.certification-card:hover .fa-award {
+    color: var(--bs-warning) !important;
+    text-shadow: 0 0 20px rgba(255, 193, 7, 0.3);
+}
+
+.certification-card:hover .fa-handshake {
+    color: var(--bs-info) !important;
+    text-shadow: 0 0 20px rgba(13, 202, 240, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .display-5 {
+        font-size: 2rem;
+    }
+    
+    .fs-1 {
+        font-size: 2.5rem !important;
+    }
+    
+    .certification-card {
+        margin-bottom: 1rem;
+        padding: 2rem 1rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .py-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    .fs-1 {
+        font-size: 2rem !important;
+    }
+    
+    .certification-card {
+        padding: 1.5rem 1rem !important;
+    }
+}
+</style>
